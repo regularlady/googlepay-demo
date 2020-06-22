@@ -1,0 +1,5 @@
+= javascript_include_tag "https://apis.google.com/js/platform.js"
+
+%h3 Add to Google Pay
+
+%g:savetoandroidpay{:jwt => @jwt, :onfailure => "failureHandler", :onsuccess => "successHandler", :size => "small", :theme => "light"}

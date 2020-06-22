@@ -1,0 +1,6 @@
+= form_tag(controller: :tickets , action: :index, method: :get) do
+  = label_tag 'Company'
+  = text_field_tag :company
+  = label_tag 'Event Name'
+  = text_field_tag :event_name
+  = button_tag 'Generate Google Pay Pass' , class: 'generate' , type: :submit
