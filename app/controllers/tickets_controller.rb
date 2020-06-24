@@ -11,12 +11,17 @@ class TicketsController < ApplicationController
 private
 
   def generate_pass
-    class_id = GooglePayClassBuilder.new(ticket_parameters[:company], ticket_parameters[:event_name]).class_id
-    @jwt = GooglePayEventBuilder.new(class_id).jwt
+    company = ticket_parameters[:company]
+    event_name = ticket_parameters[:event_name]
+    date = ticket_parameters[:date]
+    venue = ticket_parameters[:venue]
+    
+    class_id = GooglePayClassBuilder.new(company, event_name, date, venue).class_id
+    @jwt = GooglePayEventBuilder.new(class_id, company).jwt
   end  
 
   def ticket_parameters
-    params.permit(:company, :event_name)
+    params.permit(:company, :event_name, :date, :venue)
   end
 
 

@@ -3,4 +3,8 @@
   = text_field_tag :company
   = label_tag 'Event Name'
   = text_field_tag :event_name
+  = label_tag 'Venue'
+  = text_field_tag :venue
+  = label_tag 'Event Date'
+  = date_select :date, start_date: Date.today
   = button_tag 'Generate Google Pay Pass' , class: 'generate' , type: :submit
