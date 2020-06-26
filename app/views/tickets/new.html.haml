@@ -1,10 +1,19 @@
-= form_tag(controller: :tickets , action: :index, method: :get) do
-  = label_tag 'Company'
-  = text_field_tag :company
-  = label_tag 'Event Name'
-  = text_field_tag :event_name
-  = label_tag 'Venue'
-  = text_field_tag :venue
-  = label_tag 'Event Date'
-  = date_select :date, start_date: Date.today
-  = button_tag 'Generate Google Pay Pass' , class: 'generate' , type: :submit
+.valign-wrapper.row.login-box
+  .col.card.hoverable.s10.pull-s1.m6.pull-m3.l4.pull-l4
+    .card.blue.lighten-4
+      .card-content.black-text
+        .center-align
+          %span.card-title Google Pay for Passes Gem Demo 
+        %p 
+          = form_tag(controller: :tickets , action: :index, method: :get) do
+            = label_tag 'Company'
+            = text_field_tag :company
+            = label_tag 'Event Name'
+            = text_field_tag :event_name
+            = label_tag 'Venue'
+            = text_field_tag :venue
+            = label_tag 'Event Date'
+            = text_field_tag :date, '', class: 'datepicker'
+            .card-action.center-align
+              = button_tag 'Generate Google Pay Pass' , class: 'btn waves-effect waves-light', type: :submit
+

@@ -1,5 +1,12 @@
 = javascript_include_tag "https://apis.google.com/js/platform.js"
 
-%h3 Add to Google Pay
-
-%g:savetoandroidpay{:jwt => @jwt, :onfailure => "failureHandler", :onsuccess => "successHandler", :size => "small", :theme => "light"}
+.valign-wrapper.row.login-box
+  .col.card.hoverable.s10.pull-s1.m6.pull-m3.l4.pull-l4
+    .card.medium.teal.lighten-5.center-align
+      .card-image
+        = image_tag "mobile-ticket-scanner.jpg"
+      .card-content
+        %g:savetoandroidpay{:jwt => @jwt, :onfailure => "failureHandler", :onsuccess => "successHandler", :textsize => "large", :theme => "light"}
+      .card-action
+        %a(href="/") Generate New Pass
+        %a(href="https://github.com/regularlady/googlepay") View Docs

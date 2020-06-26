@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+html,
+body{
+  background-image: url(background.png);
+},
+.login-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+},
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
