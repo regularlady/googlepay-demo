@@ -158,6 +158,7 @@ GEM
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     os (1.1.0)
+    pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -201,7 +202,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     temple (0.8.2)
     thor (1.0.1)
     tilt (2.0.10)
@@ -220,11 +220,11 @@ DEPENDENCIES
   googlepay
   haml-rails
   listen (~> 3.2)
+  pg
   pry
   puma (~> 4.1)
   rails!
   sass-rails (>= 6)
-  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
