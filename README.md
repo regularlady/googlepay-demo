@@ -1,24 +1,7 @@
-# README
+# Google Pay Gem Demo 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo app to show an implementation of the [Google Pay for Passes gem](https://github.com/regularlady/googlepay). It's built on Rails 6 using the minimal flag. 
 
-Things you may want to cover:
+# Try It
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Try the app [here](https://google-pay-demo.herokuapp.com/).  
