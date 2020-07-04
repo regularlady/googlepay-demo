@@ -1,6 +1,6 @@
 # Google Pay Gem Demo 
 
-This is a demo app to show an implementation of the [Google Pay for Passes gem](https://github.com/regularlady/googlepay). It's built on Rails 6 using the minimal flag. 
+This is a demo app to show an implementation of the [Google Pay for Passes gem](https://github.com/regularlady/googlepay). It's built on Rails 6 using the --minimal flag. 
 
 # Try It
 
