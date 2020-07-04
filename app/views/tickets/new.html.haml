@@ -6,14 +6,14 @@
           %span.card-title Google Pay for Passes Gem Demo 
         %p 
           = form_tag(controller: :tickets , action: :index, method: :get) do
-            = label_tag 'Company'
             = text_field_tag :company
-            = label_tag 'Event Name'
+            = label_tag 'Company'
             = text_field_tag :event_name
-            = label_tag 'Venue'
+            = label_tag 'Event Name'
             = text_field_tag :venue
-            = label_tag 'Event Date'
+            = label_tag 'Venue'
             = text_field_tag :date, '', class: 'datepicker'
+            = label_tag 'Event Date'
             .card-action.center-align
               = button_tag 'Generate Google Pay Pass' , class: 'btn waves-effect waves-light', type: :submit
     .card-action
